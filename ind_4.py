@@ -11,15 +11,11 @@ if __name__ == '__main__':
     a = input("Введите первое слово: ")
     b = input("Введите второе слово: ")
 
-    def unique(it):
-        s = set()
-        for x in it:
-            if x not in s:
-                s.add(x)
-                yield x
+    s = set()
+    for x in a:
+        s.add(x)
 
-    a = unique(a)
-    for i in a:
+    for i in s:
         for j in b:
             if i == j:
                 print('да')

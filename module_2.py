@@ -11,5 +11,4 @@ if __name__ == '__main__':
     else:
         # Длина слова четная
         r = word[:idx-1] + word[idx+1:]
-
     print(r)
